@@ -1,0 +1,6 @@
+model,description,onnx_size_mb,accuracy_pct,latency_bs1_mean_ms,latency_bs1_p95_ms
+fp32,FP32 baseline,44.686,93.36,6.258,6.876
+ptq,PTQ INT8,11.29,92.98,4.036,4.441
+qat,QAT INT8,44.864,93.52,14.255,15.497
+unstructured,Unstructured pruned,44.686,93.64,6.282,6.874
+structured,Structured pruned,22.711,93.34,3.014,3.454

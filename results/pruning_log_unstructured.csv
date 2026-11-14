@@ -1,0 +1,6 @@
+iteration,target_sparsity_pct,measured_sparsity_pct,acc_after_pruning,acc_after_finetune
+1,39.04,39.04,93.36,93.52
+2,62.72,62.72,92.43,93.35
+3,74.88,74.88,90.52,93.69
+4,79.36,79.36,92.86,93.65
+5,80.0,80.0,93.3,93.64

@@ -1,0 +1,6 @@
+model,description,test_samples,accuracy_pct,size_mb,acc_delta_vs_fp32,compressed_size_mb,total_weights,nonzero_weights,sparsity_pct,macs_millions,latency_bs1_mean_ms,latency_bs1_p50_ms,latency_bs1_p95_ms,throughput_img_per_s,acc_airplane,acc_automobile,acc_bird,acc_cat,acc_deer,acc_dog,acc_frog,acc_horse,acc_ship,acc_truck,size_reduction_x,speedup_x
+fp32,FP32 baseline,10000,93.36,44.775,0.0,41.519,11164352,11164352,0.0,555.4,13.946,13.861,15.099,108.1,94.3,97.1,89.8,85.4,94.5,89.1,96.2,94.6,96.4,96.2,1.0,1.0
+ptq,PTQ INT8,10000,93.48,11.307,0.12,9.865,11164352,11009310,1.39,555.4,7.11,7.07,7.81,228.9,94.4,97.1,90.1,85.9,94.7,89.3,96.6,94.2,96.5,96.0,3.96,1.96
+qat,QAT INT8,10000,93.52,11.307,0.16,9.868,11164352,11008785,1.39,555.4,6.65,6.637,7.327,232.5,95.0,97.3,90.4,85.2,94.8,89.9,95.9,95.2,95.5,96.0,3.96,2.1
+unstructured,Unstructured pruned,10000,93.64,44.777,0.28,12.039,11164352,2232870,80.0,555.4,13.728,13.364,15.626,111.8,94.3,96.5,90.2,87.5,95.3,89.6,96.3,95.3,95.5,95.9,1.0,1.02
+structured,Structured pruned,10000,93.34,22.791,-0.02,21.119,5671616,5671616,0.0,281.7,9.205,9.14,10.037,208.9,95.0,96.4,90.4,85.4,95.1,89.9,95.4,94.9,95.1,95.8,1.96,1.52
